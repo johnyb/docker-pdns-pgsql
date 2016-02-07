@@ -1,0 +1,9 @@
+pdns:
+  build: .
+  environment:
+    PGUSER: pdns
+    PGPASSWORD: secret
+  links:
+    - postgres:postgres
+postgres:
+  image: postgres
