@@ -8,5 +8,8 @@ COPY ["setup.sql", "/setup.sql"]
 COPY ["entrypoint.sh", "/entrypoint.sh"]
 RUN chmod +x /entrypoint.sh
 
+EXPOSE 53/udp
+EXPOSE 53
+
 ENTRYPOINT ["/entrypoint.sh"]
 
