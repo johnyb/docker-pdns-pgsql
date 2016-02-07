@@ -10,6 +10,7 @@ RUN chmod +x /entrypoint.sh
 
 EXPOSE 53/udp
 EXPOSE 53
+EXPOSE 8081
 
 ENTRYPOINT ["/entrypoint.sh"]
 
